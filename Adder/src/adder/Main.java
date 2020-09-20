@@ -11,20 +11,7 @@ public class Main {
         }
     }
 
-    private static int addArguments(String[] args) throws Exception {
-	 	 if(args.length == 0) throw new Exception();
-	 	 If(args[0].compareTo("-") == 1) {
-		 	int sum = 0;
-		 	for(int i = 1; i < args.length; i++) {
-		 		sum = sum + Integer.valueOf(args[i]);
-			}
-		 	return -sum;
-	 	 }
-	 	 else {
-		 	for(int i = 0; i < args.length; i++) {
-		 		sum = sum + Integer.valueOf(args[i]);
-			}
-		 	return sum;
-	 	 }
+    private static int addArguments(String[] args) {
+        return Integer.valueOf(args[0]) + Integer.valueOf(args[1]);
     }
 }
