@@ -1,0 +1,23 @@
+Name: Yee Yi Pang
+NetID: yxp171830@utdallas.edu
+
+a) How many commits exist in the repository history after completing step 8 (Including commits made by the original author)?
+There are 7 commits in the history after completing step 8. 
+
+b) When was the file .gitignore added?
+The file is added on Jan 24, 2017.
+
+c) What is the difference between git log and git status? 
+"git log" displays committed history about previous commits
+"git status" shows the current state of working directory and staging area.
+
+d)  What is the difference between unstaged and untracked files? (
+Unstaged file are files that exist in the working directory but not recorded into the history.
+Untracked file are files that exists but not in the Git repository or previous commits.
+
+e) What is the difference between git checkout and git reset
+"git checkout" update a file to a different branch or revert the file back to the state.
+"git reset" update the working directory by removed the file from the staging area.
+
+f) What happens if you try to pull remote changes when there are uncommitted changes in your working directory?
+If you try to pull remote changes when there are uncommitted changes, you will get an error message. You have to commit all the current changes before you pull the remote.
