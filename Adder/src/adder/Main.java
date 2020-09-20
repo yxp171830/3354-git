@@ -7,8 +7,10 @@ public class Main {
             int result = addArguments(args);
             System.out.println(result);
         } catch (Exception e) {
-            System.err.println("Please provide integers to add");   
-        }
+            System.err.println("Please provide integers values to add");   
+        } catch (IllegalArgumentException e) {
+	    	 System.err.println("Please provide more than 1 argument");   
+	}
     }
 
     private static int addArguments(String[] args) throws Exception {
