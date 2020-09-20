@@ -14,11 +14,19 @@ public class Main {
     }
 
     private static int addArguments(String[] args) throws Exception {
-        if(args.length == 0) throw new Exception();
-		 int sum = 0;
-		 for(int i = 0; i < args.length; i++)
-			  sum = sum + Integer.valueOf(args[i]);
-
-        return sum;
+	 	 if(args.length == 0) throw new Exception();
+	 	 If(args[0].compareTo("-") == 1) {
+		 	int sum = 0;
+		 	for(int i = 1; i < args.length; i++) {
+		 		sum = sum + Integer.valueOf(args[i]);
+			}
+		 	return -sum;
+	 	 }
+	 	 else {
+		 	for(int i = 0; i < args.length; i++) {
+		 		sum = sum + Integer.valueOf(args[i]);
+			}
+		 	return sum;
+	 	 }
     }
 }
